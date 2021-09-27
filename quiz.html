@@ -5,41 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <section >
-        <div><a href="index.html">IsTriangle</a></div>
-        <div><a href="quiz.html">Quiz</a></div>
-        <div><a href="hypotenuse.html">Hypotenuse</a></div>
-        <div><a href="area.html">Area</a></div>
+    <section  id="header">
+        <div class="links"><a href="index.html">IsTriangle</a></div>
+        <div class="links"><a href="quiz.html">Quiz</a></div>
+        <div class="links"><a href="hypotenuse.html">Hypotenuse</a></div>
+        <div class="links"><a href="area.html">Area</a></div>
     </section>
 
-    <div class="container">
-        <h1>Quiz</h1>
-        <label for="question1">What is the fourth angle of a triangle if first two are 30 and 60?</label>
-        <div id="question1">
-            <span> <input type="radio" class="">30</span>
-            <span> <input type="radio" class="">45</span>
-            <span> <input type="radio" class="">60</span>
-            <span> <input type="radio" class="">90</span>
-        </div>
+    <h1>Quiz</h1>
+    <section id="quest-1" class="container">
+        <em>What is the third angle if first 2 are 90 and 45?</em>
+       <ul>
+        <li ><input value="0" class="q-1"name="q1"type="radio">30</li>
+        <li ><input value="1" class="q-1"name="q1" type="radio">45</li>
+        <li ><input value="0" class="q-1" name="q1"type="radio">60</li>
+        <li ><input value="0" class="q-1" name="q1" type="radio">90</li>
+    </ul>
+    </section>
 
-        <label for="question2">What is known as the hypotenuse of a right angled Triangle?</label>
-        <div id="question1">
-            <span> <input type="radio" class="">bisector</span>
-            <span> <input type="radio" class="">median</span>
-            <span> <input type="radio" class="">opposite to 90 degree</span>
-            <span> <input type="radio" class="">none of these</span>
-        </div>
+    <section id="quest-2" class="container">
 
-        <label for="question2">What is  intersection of medians called?</label>
-        <div id="question1">
-            <span> <input type="radio" class="">centroid</span>
-            <span> <input type="radio" class="">incentre</span>
-            <span> <input type="radio" class="">circumcentre</span>
-            <span> <input type="radio" class="">orthocentre</span>
-        </div>
+        <em>Point of intersection of medians is known as??</em>
+        <ul>
+        <li ><input value="1" class="q-2"name="q2"type="radio">Centroid</li>
+        <li ><input value="0" class="q-2"name="q2" type="radio">Cicumcentre</li>
+        <li ><input value="0" class="q-2" name="q2"type="radio">Incentre</li>
+        <li ><input value="0" class="q-2" name="q2" type="radio">Orthocentre</li>
+    </ul>
+    </section>
 
+    <section id="quest-3" class="container ">
+        <em>Triangle with each angle=60 is known as</em>
+        <ul>
+        <li ><input value="0" class="q-3"name="q3"type="radio">Acute</li>
+        <li> <input value="0" class="q-3"name="q3" type="radio">Isoceles</li>
+        <li> <input value="1" class="q-3" name="q3"type="radio">Equilateral</li>
+        <li><input value="0" class="q-3" name="q3" type="radio">Scalene</li>
+         </ul>
+    </section>
+    <div class="output container ">
+        Your Score is : <span id="output-span"></span>
     </div>
+    <script src="quiz.js" type="text/javascript"></script>
 </body>
 </html>
