@@ -1,0 +1,90 @@
+:root{
+    --primary-blue: #6366F1;
+    
+    --primary-violet:#7C3AED;
+    --primary-grey:black;
+    /* --primary-grey:
+    #4B5563; */
+    
+}
+
+body{
+    padding:0;
+    margin:0;
+    background-color: var(--primary-grey);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    
+    
+}
+section{
+    background-color: var(--primary-blue);
+    padding:1.5% 1.5%;
+    margin-bottom: 1%;
+    border-bottom-left-radius: 1rem;
+    
+}
+.links{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    padding-right: 1.2%;
+    
+}
+.container{
+    margin-top:1%;
+    width:40%;
+    margin:auto;
+    height: 70vh;
+    text-align: center;
+    border: 1px solid black;
+    background-image: url("triangle.png");
+    background-position-y: -6vh;
+}
+h1{
+    /* color: var(--primary-blue); */
+    color: var(--primary-violet);
+    font-size: 2.5rem;
+    background-color: var(--primary-grey);
+}
+
+label,input{
+    display: block;
+    margin: auto;
+
+}
+label{
+    font-size: larger;
+    padding-bottom: 1%;
+}
+input{
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    width: 50%;
+    height:5%;
+    background: none;
+    background-color: black;
+    color: white;
+    border-radius:1rem;
+    border:1px solid var(--primary-blue);
+    text-align: center;
+}
+#check-triangle{
+    margin-top: 1%;
+    width:30%;
+    background: none;
+    background-color: var(--primary-blue);
+    border:2px solid black;
+    padding:2% 2%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+}
+#output-bar{
+    
+    margin-top: 2%;
+}
