@@ -6,23 +6,27 @@
     <meta http-equiv="X-UA-Compatible" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse</title>
+    <link rel="stylesheet" href="hypotenuse.css">
 </head>
 <body>
     
     <section >
-        <div><a href="index.html">IsTriangle</a></div>
-        <div><a href="quiz.html">Quiz</a></div>
-        <div><a href="hypotenuse.html">Hypotenuse</a></div>
-        <div><a href="area.html">Area</a></div>
+        <div class="links"><a href="index.html">IsTriangle</a></div>
+        <div class="links"><a href="quiz.html">Quiz</a></div>
+        <div class="links"><a href="hypotenuse.html">Hypotenuse</a></div>
+        <div class="links"><a href="area.html">Area</a></div>
     </section>
+
     <div class="container">
         <h1>Hypotenuse</h1>
         <em>hyp = √(a²+b²) </em>
         <label for="side-1">Enter first side</label>
-        <input type="number" placeholder="a:">
+        <input type="number" id="num-1" placeholder="a:">
         <label for="side-2">Enter second side</label>
-        <input type="number" placeholder="b:">
-        <button id="#get-hyp">Get Hypotenuse</button>
+        <input type="number" id="num-2" placeholder="b:">
+        <button class="btn">Hypotenuse</button>
+        <div id="output-div"> Hyp = <span id="output-bar"></span></div>
     </div>
+    <script src="hypotenuse.js" type="text/javascript"></script>
 </body>
 </html>
